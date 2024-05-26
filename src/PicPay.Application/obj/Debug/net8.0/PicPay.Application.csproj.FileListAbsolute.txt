@@ -13,3 +13,4 @@ F:\dev\PicPay\src\PicPay.Application\obj\Debug\net8.0\PicPay.Application.dll
 F:\dev\PicPay\src\PicPay.Application\obj\Debug\net8.0\refint\PicPay.Application.dll
 F:\dev\PicPay\src\PicPay.Application\obj\Debug\net8.0\PicPay.Application.pdb
 F:\dev\PicPay\src\PicPay.Application\obj\Debug\net8.0\ref\PicPay.Application.dll
+F:\dev\PicPay\src\PicPay.Application\obj\Debug\net8.0\PicPay.Application.sourcelink.json

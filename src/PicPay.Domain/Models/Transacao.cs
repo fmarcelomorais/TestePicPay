@@ -31,7 +31,7 @@ namespace PicPay.Domain.Models
 
         }
 
-        public void RealizarTransacao(/*Usuario envia, Usuario recebe, decimal valor*/)
+        public List<Usuario> RealizarTransacao(/*Usuario envia, Usuario recebe, decimal valor*/)
         {
             //UsuariosTransacao[0] = envia;
             //UsuariosTransacao[1] = recebe;
@@ -48,10 +48,10 @@ namespace PicPay.Domain.Models
                 UsuariosTransacao[1].Conta.ReceberValor(UsuariosTransacao[1].Conta, ValorTransacao);
 
                 StatusTransacao = true;
-                //return UsuariosTransacao;
+                return UsuariosTransacao;
             }
 
-            //return UsuariosTransacao;
+            return UsuariosTransacao;
         }
 
     }

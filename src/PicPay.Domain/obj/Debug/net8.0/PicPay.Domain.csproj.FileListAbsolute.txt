@@ -9,3 +9,4 @@ F:\dev\PicPay\src\PicPay.Domain\obj\Debug\net8.0\PicPay.Domain.dll
 F:\dev\PicPay\src\PicPay.Domain\obj\Debug\net8.0\refint\PicPay.Domain.dll
 F:\dev\PicPay\src\PicPay.Domain\obj\Debug\net8.0\PicPay.Domain.pdb
 F:\dev\PicPay\src\PicPay.Domain\obj\Debug\net8.0\ref\PicPay.Domain.dll
+F:\dev\PicPay\src\PicPay.Domain\obj\Debug\net8.0\PicPay.Domain.sourcelink.json
