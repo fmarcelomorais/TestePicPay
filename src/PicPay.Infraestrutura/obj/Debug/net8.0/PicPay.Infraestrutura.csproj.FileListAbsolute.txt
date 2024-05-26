@@ -1,0 +1,17 @@
+F:\dev\PicPay\src\PicPay.Infraestrutura\bin\Debug\net8.0\PicPay.Infraestrutura.deps.json
+F:\dev\PicPay\src\PicPay.Infraestrutura\bin\Debug\net8.0\PicPay.Infraestrutura.runtimeconfig.json
+F:\dev\PicPay\src\PicPay.Infraestrutura\bin\Debug\net8.0\PicPay.Infraestrutura.dll
+F:\dev\PicPay\src\PicPay.Infraestrutura\bin\Debug\net8.0\PicPay.Infraestrutura.pdb
+F:\dev\PicPay\src\PicPay.Infraestrutura\bin\Debug\net8.0\PicPay.Domain.dll
+F:\dev\PicPay\src\PicPay.Infraestrutura\bin\Debug\net8.0\PicPay.Domain.pdb
+F:\dev\PicPay\src\PicPay.Infraestrutura\obj\Debug\net8.0\PicPay.Infraestrutura.csproj.AssemblyReference.cache
+F:\dev\PicPay\src\PicPay.Infraestrutura\obj\Debug\net8.0\PicPay.Infraestrutura.GeneratedMSBuildEditorConfig.editorconfig
+F:\dev\PicPay\src\PicPay.Infraestrutura\obj\Debug\net8.0\PicPay.Infraestrutura.AssemblyInfoInputs.cache
+F:\dev\PicPay\src\PicPay.Infraestrutura\obj\Debug\net8.0\PicPay.Infraestrutura.AssemblyInfo.cs
+F:\dev\PicPay\src\PicPay.Infraestrutura\obj\Debug\net8.0\PicPay.Infraestrutura.csproj.CoreCompileInputs.cache
+F:\dev\PicPay\src\PicPay.Infraestrutura\obj\Debug\net8.0\PicPay.I.190FBD9F.Up2Date
+F:\dev\PicPay\src\PicPay.Infraestrutura\obj\Debug\net8.0\PicPay.Infraestrutura.dll
+F:\dev\PicPay\src\PicPay.Infraestrutura\obj\Debug\net8.0\refint\PicPay.Infraestrutura.dll
+F:\dev\PicPay\src\PicPay.Infraestrutura\obj\Debug\net8.0\PicPay.Infraestrutura.pdb
+F:\dev\PicPay\src\PicPay.Infraestrutura\obj\Debug\net8.0\PicPay.Infraestrutura.genruntimeconfig.cache
+F:\dev\PicPay\src\PicPay.Infraestrutura\obj\Debug\net8.0\ref\PicPay.Infraestrutura.dll

@@ -1,0 +1,15 @@
+F:\dev\PicPay\src\PicPay.Application\obj\Debug\net8.0\PicPay.Application.csproj.AssemblyReference.cache
+F:\dev\PicPay\src\PicPay.Application\obj\Debug\net8.0\PicPay.Application.GeneratedMSBuildEditorConfig.editorconfig
+F:\dev\PicPay\src\PicPay.Application\obj\Debug\net8.0\PicPay.Application.AssemblyInfoInputs.cache
+F:\dev\PicPay\src\PicPay.Application\obj\Debug\net8.0\PicPay.Application.AssemblyInfo.cs
+F:\dev\PicPay\src\PicPay.Application\obj\Debug\net8.0\PicPay.Application.csproj.CoreCompileInputs.cache
+F:\dev\PicPay\src\PicPay.Application\bin\Debug\net8.0\PicPay.Application.deps.json
+F:\dev\PicPay\src\PicPay.Application\bin\Debug\net8.0\PicPay.Application.dll
+F:\dev\PicPay\src\PicPay.Application\bin\Debug\net8.0\PicPay.Application.pdb
+F:\dev\PicPay\src\PicPay.Application\bin\Debug\net8.0\PicPay.Domain.dll
+F:\dev\PicPay\src\PicPay.Application\bin\Debug\net8.0\PicPay.Domain.pdb
+F:\dev\PicPay\src\PicPay.Application\obj\Debug\net8.0\PicPay.A.0FEB076B.Up2Date
+F:\dev\PicPay\src\PicPay.Application\obj\Debug\net8.0\PicPay.Application.dll
+F:\dev\PicPay\src\PicPay.Application\obj\Debug\net8.0\refint\PicPay.Application.dll
+F:\dev\PicPay\src\PicPay.Application\obj\Debug\net8.0\PicPay.Application.pdb
+F:\dev\PicPay\src\PicPay.Application\obj\Debug\net8.0\ref\PicPay.Application.dll

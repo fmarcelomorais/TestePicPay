@@ -1,0 +1,130 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\dev\\PicPay\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1BCC9C70-6B86-4D1F-A224-75853A7EC2AB}|src\\PicPay.Infraestrutura\\PicPay.Infraestrutura.csproj|f:\\dev\\picpay\\src\\picpay.infraestrutura\\repoistories\\transacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BCC9C70-6B86-4D1F-A224-75853A7EC2AB}|src\\PicPay.Infraestrutura\\PicPay.Infraestrutura.csproj|solutionrelative:src\\picpay.infraestrutura\\repoistories\\transacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C5F04C3-88B2-4279-A587-B3757F43F467}|src\\PicPay.Application\\PicPay.Application.csproj|f:\\dev\\picpay\\src\\picpay.application\\services\\transacaoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C5F04C3-88B2-4279-A587-B3757F43F467}|src\\PicPay.Application\\PicPay.Application.csproj|solutionrelative:src\\picpay.application\\services\\transacaoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F2DBD22-7DF7-4C0F-A36D-1FFCE8FB9D17}|src\\PicPay.Domain\\PicPay.Domain.csproj|f:\\dev\\picpay\\src\\picpay.domain\\models\\transacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F2DBD22-7DF7-4C0F-A36D-1FFCE8FB9D17}|src\\PicPay.Domain\\PicPay.Domain.csproj|solutionrelative:src\\picpay.domain\\models\\transacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F2DBD22-7DF7-4C0F-A36D-1FFCE8FB9D17}|src\\PicPay.Domain\\PicPay.Domain.csproj|f:\\dev\\picpay\\src\\picpay.domain\\interfaces\\itransacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F2DBD22-7DF7-4C0F-A36D-1FFCE8FB9D17}|src\\PicPay.Domain\\PicPay.Domain.csproj|solutionrelative:src\\picpay.domain\\interfaces\\itransacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFC7F4A6-843D-42F2-9BC8-185FA584F928}|src\\PicPay.Api\\PicPay.Api.csproj|f:\\dev\\picpay\\src\\picpay.api\\controllers\\transferenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFC7F4A6-843D-42F2-9BC8-185FA584F928}|src\\PicPay.Api\\PicPay.Api.csproj|solutionrelative:src\\picpay.api\\controllers\\transferenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C5F04C3-88B2-4279-A587-B3757F43F467}|src\\PicPay.Application\\PicPay.Application.csproj|f:\\dev\\picpay\\src\\picpay.application\\interfaces\\itransacaoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C5F04C3-88B2-4279-A587-B3757F43F467}|src\\PicPay.Application\\PicPay.Application.csproj|solutionrelative:src\\picpay.application\\interfaces\\itransacaoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ITransacaoServices.cs",
+              "DocumentMoniker": "F:\\dev\\PicPay\\src\\PicPay.Application\\Interfaces\\ITransacaoServices.cs",
+              "RelativeDocumentMoniker": "src\\PicPay.Application\\Interfaces\\ITransacaoServices.cs",
+              "ToolTip": "F:\\dev\\PicPay\\src\\PicPay.Application\\Interfaces\\ITransacaoServices.cs",
+              "RelativeToolTip": "src\\PicPay.Application\\Interfaces\\ITransacaoServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T03:26:30.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TransferenciaController.cs",
+              "DocumentMoniker": "F:\\dev\\PicPay\\src\\PicPay.Api\\Controllers\\TransferenciaController.cs",
+              "RelativeDocumentMoniker": "src\\PicPay.Api\\Controllers\\TransferenciaController.cs",
+              "ToolTip": "F:\\dev\\PicPay\\src\\PicPay.Api\\Controllers\\TransferenciaController.cs",
+              "RelativeToolTip": "src\\PicPay.Api\\Controllers\\TransferenciaController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T01:07:13.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransacaoService.cs",
+              "DocumentMoniker": "F:\\dev\\PicPay\\src\\PicPay.Application\\Services\\TransacaoService.cs",
+              "RelativeDocumentMoniker": "src\\PicPay.Application\\Services\\TransacaoService.cs",
+              "ToolTip": "F:\\dev\\PicPay\\src\\PicPay.Application\\Services\\TransacaoService.cs",
+              "RelativeToolTip": "src\\PicPay.Application\\Services\\TransacaoService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T02:14:58.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Transacao.cs",
+              "DocumentMoniker": "F:\\dev\\PicPay\\src\\PicPay.Domain\\Models\\Transacao.cs",
+              "RelativeDocumentMoniker": "src\\PicPay.Domain\\Models\\Transacao.cs",
+              "ToolTip": "F:\\dev\\PicPay\\src\\PicPay.Domain\\Models\\Transacao.cs",
+              "RelativeToolTip": "src\\PicPay.Domain\\Models\\Transacao.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAwDYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T01:19:30.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransacaoRepository.cs",
+              "DocumentMoniker": "F:\\dev\\PicPay\\src\\PicPay.Infraestrutura\\Repoistories\\TransacaoRepository.cs",
+              "RelativeDocumentMoniker": "src\\PicPay.Infraestrutura\\Repoistories\\TransacaoRepository.cs",
+              "ToolTip": "F:\\dev\\PicPay\\src\\PicPay.Infraestrutura\\Repoistories\\TransacaoRepository.cs",
+              "RelativeToolTip": "src\\PicPay.Infraestrutura\\Repoistories\\TransacaoRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T01:05:24.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ITransacaoRepository.cs",
+              "DocumentMoniker": "F:\\dev\\PicPay\\src\\PicPay.Domain\\Interfaces\\ITransacaoRepository.cs",
+              "RelativeDocumentMoniker": "src\\PicPay.Domain\\Interfaces\\ITransacaoRepository.cs",
+              "ToolTip": "F:\\dev\\PicPay\\src\\PicPay.Domain\\Interfaces\\ITransacaoRepository.cs",
+              "RelativeToolTip": "src\\PicPay.Domain\\Interfaces\\ITransacaoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T02:14:01.216Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
