@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PicPay.Domain.Models
+﻿namespace PicPay.Domain.Models
 {
     public class Transacao
     {
@@ -13,45 +7,48 @@ namespace PicPay.Domain.Models
         public DateTime DataTransacao { get; set; }
         public bool StatusTransacao { get; set;}
         public decimal ValorTransacao { get; set; }
-        public List<Usuario> UsuariosTransacao { get; set; }   
-
+        //public List<Usuario> UsuariosTransacao { get; set; }   
+        public Usuario UsuarioEnvia { get; set;}
+        public Usuario UsuarioRecebe { get; set;}
         public Transacao()
         {
             Id = Guid.NewGuid(); 
-            UsuariosTransacao = [];
+           // UsuariosTransacao = [];
 
         }
         public Transacao(Usuario envia, Usuario recebe, decimal valor)
         {
             Id = Guid.NewGuid();
-            UsuariosTransacao = [];
-            UsuariosTransacao.Add(envia);
-            UsuariosTransacao.Add(recebe);
+            //UsuariosTransacao = [];
+            //UsuariosTransacao.Add(envia);
+            //UsuariosTransacao.Add(recebe);
+            UsuarioEnvia = envia;
+            UsuarioRecebe = recebe;
             ValorTransacao = valor;
 
         }
 
-        public List<Usuario> RealizarTransacao(/*Usuario envia, Usuario recebe, decimal valor*/)
+        public List<Usuario> RealizarTransacao()
         {
-            //UsuariosTransacao[0] = envia;
-            //UsuariosTransacao[1] = recebe;
+            List<Usuario> usuarios = [UsuarioEnvia, UsuarioRecebe];
             NumeroTransacao = Id.ToString().Replace("-", "").Trim();
             DataTransacao = DateTime.Now;
-           // ValorTransacao = valor;
             StatusTransacao = false;
             
-            if (UsuariosTransacao[0].TipoUsuario == 2) throw new Exception();
+            if (UsuarioEnvia.TipoUsuario == 2) throw new Exception();
 
-            if (UsuariosTransacao[0].Conta.VerificarPossibilidadeDeTransferencia(ValorTransacao))
+            if (UsuarioEnvia.Conta.VerificarPossibilidadeDeTransferencia(ValorTransacao))
             {
-                UsuariosTransacao[0].Conta.EnviarValor(UsuariosTransacao[0].Conta, ValorTransacao);
-                UsuariosTransacao[1].Conta.ReceberValor(UsuariosTransacao[1].Conta, ValorTransacao);
+                UsuarioEnvia.Conta.EnviarValor(UsuarioEnvia.Conta, ValorTransacao);
+                UsuarioRecebe.Conta.ReceberValor(UsuarioRecebe.Conta, ValorTransacao);
 
                 StatusTransacao = true;
-                return UsuariosTransacao;
+
+                usuarios = [UsuarioEnvia, UsuarioRecebe];
+                return usuarios;
             }
 
-            return UsuariosTransacao;
+            return usuarios;
         }
 
     }

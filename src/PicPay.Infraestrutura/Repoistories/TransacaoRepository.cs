@@ -41,5 +41,11 @@ namespace PicPay.Infraestrutura.Repoistories
             _context.Entry<Conta>(recebimento).State = EntityState.Modified;
             await _context.SaveChangesAsync();
         }
+
+        public async Task<IEnumerable<Transacao>> TodasAsTransacoes()
+        {
+            var transacoes = await _context.Transacoes.AsNoTracking().ToListAsync();
+            return transacoes;
+        }
     }
 }

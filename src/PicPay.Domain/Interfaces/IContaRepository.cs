@@ -9,6 +9,6 @@ namespace PicPay.Domain.Interfaces
 {
     public interface IContaRepository : IRepositoryGeneric<Conta>
     {
-        
+        Task<Conta> Depositar(Conta conta, decimal valor);
     }
 }

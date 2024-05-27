@@ -56,20 +56,29 @@ namespace PicPay.Infraestrutura.Migrations
                     b.Property<DateTime>("DataTransacao")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValueSql("NEWDATE()");
+                        .HasDefaultValueSql("GETDATE()");
 
                     b.Property<string>("NumeroTransacao")
-                        .IsRequired()
                         .HasColumnType("VARCHAR(32)");
 
                     b.Property<bool>("StatusTransacao")
                         .HasColumnType("BIT");
+
+                    b.Property<Guid>("UsuarioEnviaId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("UsuarioRecebeId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<decimal>("ValorTransacao")
                         .HasPrecision(10, 2)
                         .HasColumnType("decimal(10,2)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("UsuarioEnviaId");
+
+                    b.HasIndex("UsuarioRecebeId");
 
                     b.ToTable("Transacoes", (string)null);
                 });
@@ -108,21 +117,6 @@ namespace PicPay.Infraestrutura.Migrations
                     b.ToTable("Usuarios", (string)null);
                 });
 
-            modelBuilder.Entity("TransacaoUsuario", b =>
-                {
-                    b.Property<Guid>("TransacoesId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("UsuariosTransacaoId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("TransacoesId", "UsuariosTransacaoId");
-
-                    b.HasIndex("UsuariosTransacaoId");
-
-                    b.ToTable("TransacaoUsuario");
-                });
-
             modelBuilder.Entity("PicPay.Domain.Models.Conta", b =>
                 {
                     b.HasOne("PicPay.Domain.Models.Usuario", "Usuario")
@@ -134,25 +128,31 @@ namespace PicPay.Infraestrutura.Migrations
                     b.Navigation("Usuario");
                 });
 
-            modelBuilder.Entity("TransacaoUsuario", b =>
+            modelBuilder.Entity("PicPay.Domain.Models.Transacao", b =>
                 {
-                    b.HasOne("PicPay.Domain.Models.Transacao", null)
+                    b.HasOne("PicPay.Domain.Models.Usuario", "UsuarioEnvia")
+                        .WithMany("Transacoes")
+                        .HasForeignKey("UsuarioEnviaId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("PicPay.Domain.Models.Usuario", "UsuarioRecebe")
                         .WithMany()
-                        .HasForeignKey("TransacoesId")
+                        .HasForeignKey("UsuarioRecebeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("PicPay.Domain.Models.Usuario", null)
-                        .WithMany()
-                        .HasForeignKey("UsuariosTransacaoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("UsuarioEnvia");
+
+                    b.Navigation("UsuarioRecebe");
                 });
 
             modelBuilder.Entity("PicPay.Domain.Models.Usuario", b =>
                 {
                     b.Navigation("Conta")
                         .IsRequired();
+
+                    b.Navigation("Transacoes");
                 });
 #pragma warning restore 612, 618
         }

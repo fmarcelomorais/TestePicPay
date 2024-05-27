@@ -14,6 +14,13 @@ namespace PicPay.Api.Controllers
             _transacao = transacao;
         }
 
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<TransacaoDTO>>> GetAllTransfers()
+        {
+            var transacoes = await _transacao.TodasAsTransacoes();
+            return Ok(transacoes);
+        }
+
         [HttpPost]
         public async Task<ActionResult> Transferir(TrasnferDTO transfer)
         {

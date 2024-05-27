@@ -20,19 +20,34 @@ public class ContaRepository : IContaRepository
         return conta;
     }
 
-    public Task<int> Delete(Guid id)
+    public async Task<bool> Delete(Guid id)
     {
-        throw new NotImplementedException();
+        var conta = await _context.Contas.FindAsync(id);
+        _context.Remove(conta);
+        var sucesso = await _context.SaveChangesAsync();
+        return sucesso == 1 ? true : false;
     }
 
-    public Task<Conta> Editar(Conta entidade)
+    public async Task<Conta> Depositar(Conta conta, decimal valor)
     {
-        throw new NotImplementedException();
+        conta.Depositar(conta, valor);
+
+        _context.Update(conta);
+        await _context.SaveChangesAsync();
+        return conta;
     }
 
-    public Task<Conta> ObterPorId(Guid id)
+    public async Task<bool> Editar(Conta entidade)
     {
-        throw new NotImplementedException();
+        _context.Update(entidade);
+        var sucesso = await _context.SaveChangesAsync();
+        return sucesso == 1 ? true : false;
+    }
+
+    public async Task<Conta> ObterPorId(Guid id)
+    {
+        var conta = await _context.Contas.Include(c => c.Usuario).AsNoTracking().FirstOrDefaultAsync(conta => conta.Id == id);
+        return conta;
     }
 
     public async Task<IEnumerable<Conta>> ObterTodos()

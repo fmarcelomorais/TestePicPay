@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PicPay.Domain.Models;
+﻿namespace PicPay.Domain.Models;
 
 public class Usuario
 {
@@ -20,7 +14,6 @@ public class Usuario
     public Usuario() { }
     public Usuario(string fullName, string documento, string email, string senha)
     {
-
         FullName = fullName;
         Documento = documento;
         Email = email;

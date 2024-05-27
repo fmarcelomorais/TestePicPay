@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\dev\\PicPay\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AFC7F4A6-843D-42F2-9BC8-185FA584F928}|src\\PicPay.Api\\PicPay.Api.csproj|f:\\dev\\picpay\\src\\picpay.api\\controllers\\transferenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFC7F4A6-843D-42F2-9BC8-185FA584F928}|src\\PicPay.Api\\PicPay.Api.csproj|solutionrelative:src\\picpay.api\\controllers\\transferenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BCC9C70-6B86-4D1F-A224-75853A7EC2AB}|src\\PicPay.Infraestrutura\\PicPay.Infraestrutura.csproj|f:\\dev\\picpay\\src\\picpay.infraestrutura\\repoistories\\transacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BCC9C70-6B86-4D1F-A224-75853A7EC2AB}|src\\PicPay.Infraestrutura\\PicPay.Infraestrutura.csproj|solutionrelative:src\\picpay.infraestrutura\\repoistories\\transacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BCC9C70-6B86-4D1F-A224-75853A7EC2AB}|src\\PicPay.Infraestrutura\\PicPay.Infraestrutura.csproj|f:\\dev\\picpay\\src\\picpay.infraestrutura\\repoistories\\contarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BCC9C70-6B86-4D1F-A224-75853A7EC2AB}|src\\PicPay.Infraestrutura\\PicPay.Infraestrutura.csproj|solutionrelative:src\\picpay.infraestrutura\\repoistories\\contarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +31,45 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransferenciaController.cs",
+              "DocumentMoniker": "F:\\dev\\PicPay\\src\\PicPay.Api\\Controllers\\TransferenciaController.cs",
+              "RelativeDocumentMoniker": "src\\PicPay.Api\\Controllers\\TransferenciaController.cs",
+              "ToolTip": "F:\\dev\\PicPay\\src\\PicPay.Api\\Controllers\\TransferenciaController.cs",
+              "RelativeToolTip": "src\\PicPay.Api\\Controllers\\TransferenciaController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA9wB8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T18:33:10.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransacaoRepository.cs",
+              "DocumentMoniker": "F:\\dev\\PicPay\\src\\PicPay.Infraestrutura\\Repoistories\\TransacaoRepository.cs",
+              "RelativeDocumentMoniker": "src\\PicPay.Infraestrutura\\Repoistories\\TransacaoRepository.cs",
+              "ToolTip": "F:\\dev\\PicPay\\src\\PicPay.Infraestrutura\\Repoistories\\TransacaoRepository.cs",
+              "RelativeToolTip": "src\\PicPay.Infraestrutura\\Repoistories\\TransacaoRepository.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA4wCEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T18:33:10.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContaRepository.cs",
+              "DocumentMoniker": "F:\\dev\\PicPay\\src\\PicPay.Infraestrutura\\Repoistories\\ContaRepository.cs",
+              "RelativeDocumentMoniker": "src\\PicPay.Infraestrutura\\Repoistories\\ContaRepository.cs",
+              "ToolTip": "F:\\dev\\PicPay\\src\\PicPay.Infraestrutura\\Repoistories\\ContaRepository.cs",
+              "RelativeToolTip": "src\\PicPay.Infraestrutura\\Repoistories\\ContaRepository.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wDAAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T18:32:31.635Z",
+              "EditorCaption": ""
             }
           ]
         }

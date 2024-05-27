@@ -9,6 +9,7 @@ namespace PicPay.Domain.Interfaces
 {
     public interface ITransacaoRepository
     {
+        Task<IEnumerable<Transacao>> TodasAsTransacoes();
         Task<Transacao> RealizarTransacao(Usuario envia, Usuario recebe, decimal valor);
         Task<Usuario> BuscarUsuarioTransacao(Guid id);
     }

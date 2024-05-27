@@ -5,6 +5,5 @@ namespace PicPay.Application.Interfaces;
 
 public interface IContaServices : IServicesGeneric<ContaDTO>
 {
-    Task<ContaDTO> Cadastrar(Guid usuarioId);
-  
+    Task<ContaDTO> Depositar(ContaDTO contaDto, decimal valor);
 }

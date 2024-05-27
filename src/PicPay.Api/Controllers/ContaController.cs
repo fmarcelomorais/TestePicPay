@@ -17,8 +17,10 @@ public class ContaController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<ContaDTO>> Create(ContaDTO contaDTO)
     {
+        if(!ModelState.IsValid) return BadRequest(ModelState);
+
         var conta = await _contaServices.Cadastrar(contaDTO);
-        return Ok(contaDTO);
+        return Ok(conta);
     }
 
     [HttpGet]
@@ -28,4 +30,36 @@ public class ContaController : ControllerBase
         return Ok(contas);
     }
 
+    [HttpGet("{id:Guid}")]
+    public async Task<ActionResult<ContaDTO>> GetById(Guid id)
+    {
+        var conta = await _contaServices.ObterPorId(id);
+        return Ok(conta);
+    }
+    
+    [HttpPatch("{id:Guid}")]
+    public async Task<ActionResult> Edit(Guid id, ContaDTO contaDTO)
+    {
+        var sucesso = await _contaServices.Editar(id, contaDTO);
+        if(sucesso)
+            return Ok(sucesso);
+        return BadRequest(sucesso);
+    }
+
+    [HttpDelete("{id:Guid}")]
+    public async Task<ActionResult> Delete(Guid id)
+    {
+        var sucesso = await _contaServices.Delete(id);
+        if(sucesso)
+            return Ok(sucesso);
+        return BadRequest(sucesso);
+    }
+    
+    [HttpPost("depositar/{id:Guid}")]
+    public async Task<ActionResult<ContaDTO>> Deposit(Guid id, decimal valor)
+    {
+        var contaDTO = await _contaServices.ObterPorId(id);
+        var conta = await _contaServices.Depositar(contaDTO, valor);
+        return Ok(conta);
+    }
 }

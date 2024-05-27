@@ -15,7 +15,6 @@ public class Conta
         Saldo = 0;
         CriaNumeroConta();
     }
-
     private void CriaNumeroConta()
     {
         var numero = Id.ToString().Substring(0,8).Trim();
@@ -25,8 +24,6 @@ public class Conta
     {
         return Saldo;
     }
-
-
     public bool EnviarValor(Conta conta, decimal valor)
     {
 
@@ -45,14 +42,12 @@ public class Conta
         return false;
 
     }
-
     public Conta ReceberValor(Conta conta, decimal valorAEnviar)
     {
         conta.Saldo += valorAEnviar;
 
         return conta;
     }
-
     public bool VerificarPossibilidadeDeTransferencia(decimal valor)
     {
         
@@ -63,4 +58,20 @@ public class Conta
 
         return false;
     }
+    public bool Depositar(Conta conta, decimal valor)
+    {
+        if (VerificaSeValorEstaCorreto(valor))
+        {
+            conta.Saldo += valor;
+            return true;
+        }
+        return false;
+    }
+    private bool VerificaSeValorEstaCorreto(decimal valor)
+    {
+        if (valor < 0) 
+            return false;        
+        return true;
+    }
+
 }

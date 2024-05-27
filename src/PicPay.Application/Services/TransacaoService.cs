@@ -3,11 +3,6 @@ using PicPay.Application.DTO;
 using PicPay.Application.Interfaces;
 using PicPay.Domain.Interfaces;
 using PicPay.Domain.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PicPay.Application.Services
 {
@@ -25,6 +20,14 @@ namespace PicPay.Application.Services
         {
             var usuario = await _transacaoRepository.BuscarUsuarioTransacao(id);
             return _mapper.Map<UsuarioDTO>(usuario);
+        }
+
+        public async Task<IEnumerable<TransacaoDTO>> TodasAsTransacoes()
+        {
+            var transacoes = await _transacaoRepository.TodasAsTransacoes();
+            var transacoesDTO = _mapper.Map<IEnumerable<TransacaoDTO>>(transacoes);
+
+            return transacoesDTO;
         }
 
         public async Task<TransacaoDTO> Transferir(UsuarioDTO enviaDTO, UsuarioDTO recebeDTO, decimal valor)

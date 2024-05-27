@@ -12,7 +12,6 @@ namespace PicPay.CrossCutting.IoC
     {
         public static IServiceCollection AddDependenyInjection(this IServiceCollection services)
         {
-
             services.AddDbContext<ApplicationContext>(ServiceLifetime.Scoped);
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
             services.AddScoped<IContaRepository, ContaRepository>();

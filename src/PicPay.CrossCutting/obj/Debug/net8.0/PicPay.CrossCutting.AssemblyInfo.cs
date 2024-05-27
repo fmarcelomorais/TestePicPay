@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PicPay.CrossCutting")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+884896307ef0c1068ad316b59ba5a8cab6bc4988")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96e01c2f18095af92c7b5d27384f8d8522b071d5")]
 [assembly: System.Reflection.AssemblyProductAttribute("PicPay.CrossCutting")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PicPay.CrossCutting")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

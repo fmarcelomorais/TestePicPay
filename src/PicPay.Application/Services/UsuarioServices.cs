@@ -3,7 +3,6 @@ using PicPay.Application.DTO;
 using PicPay.Application.Interfaces;
 using PicPay.Domain.Interfaces;
 using PicPay.Domain.Models;
-using System.Linq.Expressions;
 
 namespace PicPay.Application.Services;
 
@@ -21,31 +20,30 @@ public class UsuarioServices: IUsuarioServices
     public async Task<UsuarioDTO> Cadastrar(UsuarioDTO usuarioDto)
     {
        
-        var usuario = new Usuario(usuarioDto.FullName, usuarioDto.Documento, usuarioDto.Email, usuarioDto.Senha); //_mapper.Map<Usuario>(usuarioDto);
+        var usuario = new Usuario(usuarioDto.FullName, usuarioDto.Documento, usuarioDto.Email, usuarioDto.Senha);
         await _repository.Cadastrar(usuario);
 
         return usuarioDto;
     }
 
-    public async Task<int> Delete(Guid id)
+    public async Task<bool> Delete(Guid id)
     {
-        var ok = await _repository.Delete(id);
-        return ok;
+        var sucesso = await _repository.Delete(id);
+        return sucesso;
     }
 
-    public async Task<UsuarioDTO> Editar(Guid id, UsuarioDTO usuarioDto)
-    {
-        if (UsuarioExiste(id))
-        {
-            //Usuario usuarioEdite = new(usuarioDto.Id, usuarioDto.FullName, usuarioDto.Documento, usuarioDto.Email, usuarioDto.Senha);
-            var usuarioEdit = _mapper.Map<Usuario>(usuarioDto);
+    public async Task<bool> Editar(Guid id, UsuarioDTO usuarioDto)
+    {        
 
-            var usuario = await _repository.Editar(usuarioEdit);
-            var usuarioAlterado = _mapper.Map<UsuarioDTO>(usuario);
-            return usuarioAlterado;
+        if (UsuarioExiste(id))
+        {           
+            var usuarioEdit = _mapper.Map<Usuario>(usuarioDto);
+            var sucesso = await _repository.Editar(usuarioEdit);
+           
+            return sucesso;
         }
 
-        return usuarioDto;
+        return false;
 
     }
 

@@ -11,8 +11,8 @@ namespace PicPay.Domain.Interfaces
     public interface IRepositoryGeneric<TEntit>
     {
         Task<TEntit> Cadastrar(TEntit entidade);
-        Task<TEntit> Editar(TEntit entidade);
-        Task<int> Delete(Guid id);
+        Task<bool> Editar(TEntit entidade);
+        Task<bool> Delete(Guid id);
         Task<IEnumerable<TEntit>> ObterTodos();
         Task<TEntit> ObterPorId(Guid id);
     }

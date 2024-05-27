@@ -17,7 +17,7 @@ namespace PicPay.Infraestrutura.Mappings
             builder.Property(c => c.TipoUsuario).IsRequired();
 
             builder.HasOne(c => c.Conta).WithOne(c => c.Usuario).OnDelete(DeleteBehavior.Cascade);
-            builder.HasMany(u => u.Transacoes).WithMany(t => t.UsuariosTransacao);
+            builder.HasMany(u => u.Transacoes).WithOne(t => t.UsuarioEnvia).OnDelete(DeleteBehavior.NoAction);
         }
     }
 }
