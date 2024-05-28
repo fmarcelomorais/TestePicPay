@@ -35,7 +35,7 @@ public class UsuarioServices: IUsuarioServices
     public async Task<bool> Editar(Guid id, UsuarioDTO usuarioDto)
     {        
 
-        if (UsuarioExiste(id))
+        if (await UsuarioExiste(id))
         {           
             var usuarioEdit = _mapper.Map<Usuario>(usuarioDto);
             var sucesso = await _repository.Editar(usuarioEdit);
@@ -62,9 +62,9 @@ public class UsuarioServices: IUsuarioServices
         return _mapper.Map<IEnumerable<UsuarioDTO>>(usuarios);  
     }
 
-    private bool UsuarioExiste(Guid id)
+    private async Task<bool> UsuarioExiste(Guid id)
     {
-        var usuario = _repository.ObterPorId(id);
+        var usuario = await _repository.ObterPorId(id);
 
         if (usuario == null) return false;
         return true;

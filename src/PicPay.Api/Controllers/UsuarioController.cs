@@ -33,19 +33,29 @@ public class UsuarioController : ControllerBase
     public async Task<ActionResult> Create(UsuarioDTO usuario)
     {
         if(!ModelState.IsValid) return BadRequest();
+        try
+        {
+            var novo = await _services.Cadastrar(usuario);
+            return Ok(novo);
 
-        var novo = await _services.Cadastrar(usuario);
-        return Ok(novo);
+        }catch(Exception ex) 
+        {
+            return BadRequest(ex.Message);
+        }
     }
 
     [HttpPatch("{id:Guid}")]
     public async Task<ActionResult> Edit(Guid id, UsuarioDTO usuarioDTO) 
     {
         if (id != usuarioDTO.Id) return BadRequest();
-
-        var sucesso = await _services.Editar(id, usuarioDTO);
-
-        return Ok(sucesso);
+        try
+        {
+            await _services.Editar(id, usuarioDTO);
+            return Ok();
+        }catch(Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
     }
 
     [HttpDelete("{id:guid}")]
@@ -54,6 +64,6 @@ public class UsuarioController : ControllerBase
         var sucesso = await _services.Delete(id);
         if(sucesso) 
             return Ok();
-        return BadRequest(sucesso);       
+        return BadRequest();       
     }
 }

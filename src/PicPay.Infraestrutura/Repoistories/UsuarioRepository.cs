@@ -14,7 +14,7 @@ public class UsuarioRepository : IUsuarioRepository
     }
 
     public async Task<Usuario> Cadastrar(Usuario usuario)
-    {
+    {       
         await _context.Usuarios.AddAsync(usuario);
         _context.SaveChanges();
         return usuario;
@@ -30,16 +30,15 @@ public class UsuarioRepository : IUsuarioRepository
     {
         _context?.Dispose();
     }
-
     public async Task<bool> Editar(Usuario usuario)
     {
-        _context.Usuarios.Update(usuario);
+        _context.Update(usuario);
         var ok = await _context.SaveChangesAsync();
         return ok == 1 ? true : false;
     }
     public async Task<Usuario> ObterPorId(Guid id)
     {
-        var usuario = await _context.Usuarios.FirstOrDefaultAsync(user => user.Id == id);
+        var usuario = await _context.Usuarios.AsNoTracking().FirstOrDefaultAsync(user => user.Id == id);
         return usuario;
     }
     public async Task<IEnumerable<Usuario>> ObterTodos()

@@ -6,22 +6,16 @@
         public string? NumeroTransacao { get; set; }
         public DateTime DataTransacao { get; set; }
         public bool StatusTransacao { get; set;}
-        public decimal ValorTransacao { get; set; }
-        //public List<Usuario> UsuariosTransacao { get; set; }   
+        public decimal ValorTransacao { get; set; } 
         public Usuario UsuarioEnvia { get; set;}
         public Usuario UsuarioRecebe { get; set;}
         public Transacao()
         {
             Id = Guid.NewGuid(); 
-           // UsuariosTransacao = [];
-
         }
         public Transacao(Usuario envia, Usuario recebe, decimal valor)
         {
             Id = Guid.NewGuid();
-            //UsuariosTransacao = [];
-            //UsuariosTransacao.Add(envia);
-            //UsuariosTransacao.Add(recebe);
             UsuarioEnvia = envia;
             UsuarioRecebe = recebe;
             ValorTransacao = valor;
@@ -35,7 +29,7 @@
             DataTransacao = DateTime.Now;
             StatusTransacao = false;
             
-            if (UsuarioEnvia.TipoUsuario == 2) throw new Exception();
+            if (UsuarioEnvia.TipoUsuario == 2) throw new Exception(message: "Logistas não podem realizar transferências.");
 
             if (UsuarioEnvia.Conta.VerificarPossibilidadeDeTransferencia(ValorTransacao))
             {
