@@ -1,21 +1,19 @@
-﻿using System.Net;
+﻿using PicPay.Infraestrutura.Interfaces;
+using System.Net;
 using System.Net.Http;
 using System.Text.Json;
 
 namespace PicPay.Infraestrutura.Services
 {
-    public class AutorizacaoService 
+    public class AutorizacaoService  : IAutorizacaoService
     {
-        private readonly HttpClient _httpClient;
+        private HttpClient _httpClient { get; set; }
         private Uri _baseAdreess { get; set; }
-        public AutorizacaoService(HttpClient httpClient, string baseAdreess)
+
+        public async Task<bool> Autorizacao(HttpClient httpClient, string baseAdreess)
         {
             _httpClient = httpClient;
             _baseAdreess = new Uri(baseAdreess);
-        }
-
-        public async Task<bool> Autorizacao()
-        {
             _httpClient.BaseAddress = _baseAdreess;
             var response = await _httpClient.GetAsync("");
             

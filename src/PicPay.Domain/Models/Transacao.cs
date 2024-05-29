@@ -1,4 +1,6 @@
-﻿namespace PicPay.Domain.Models
+﻿using System.Drawing;
+
+namespace PicPay.Domain.Models
 {
     public class Transacao
     {
@@ -13,18 +15,13 @@
         {
             Id = Guid.NewGuid(); 
         }
-        public Transacao(Usuario envia, Usuario recebe, decimal valor)
+
+        public List<Usuario> RealizarTransacao(Usuario envia, Usuario recebe, decimal valor)
         {
-            Id = Guid.NewGuid();
+            List<Usuario> usuarios = [UsuarioEnvia, UsuarioRecebe];
             UsuarioEnvia = envia;
             UsuarioRecebe = recebe;
             ValorTransacao = valor;
-
-        }
-
-        public List<Usuario> RealizarTransacao()
-        {
-            List<Usuario> usuarios = [UsuarioEnvia, UsuarioRecebe];
             NumeroTransacao = Id.ToString().Replace("-", "").Trim();
             DataTransacao = DateTime.Now;
             StatusTransacao = false;

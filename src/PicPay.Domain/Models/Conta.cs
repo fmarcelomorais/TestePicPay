@@ -30,7 +30,7 @@ public class Conta
         /* Somente contas Pessoa Física pode fazer e receber transferências. */
         if (conta.Usuario.TipoUsuario != 1)
         {
-            throw new Exception();
+            throw new Exception(message: "Logistas não podem realizar transferências.");
         }
 
         if (VerificarPossibilidadeDeTransferencia(valor))
