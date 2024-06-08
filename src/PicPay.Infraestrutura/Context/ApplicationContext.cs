@@ -11,6 +11,7 @@ namespace PicPay.Infraestrutura.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            //optionsBuilder.UseSqlServer("Server=localhost,1200;User Id=sa;Password=PicPay2024;Database=PicPayDb;Trusted_Connection=False;Encrypt=False;TrustServerCertificate=True;");
             optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=PicPayDb;Trusted_Connection=True;Encrypt=False;TrustServerCertificate=True;");
             base.OnConfiguring(optionsBuilder);
         }

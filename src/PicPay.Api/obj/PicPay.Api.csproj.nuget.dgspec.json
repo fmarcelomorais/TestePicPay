@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\dev\\PicPay\\src\\PicPay.Api\\PicPay.Api.csproj": {}
+    "F:\\dev\\Picpay\\src\\PicPay.Api\\PicPay.Api.csproj": {}
   },
   "projects": {
-    "F:\\dev\\PicPay\\src\\PicPay.Api\\PicPay.Api.csproj": {
+    "F:\\dev\\Picpay\\src\\PicPay.Api\\PicPay.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\dev\\PicPay\\src\\PicPay.Api\\PicPay.Api.csproj",
+        "projectUniqueName": "F:\\dev\\Picpay\\src\\PicPay.Api\\PicPay.Api.csproj",
         "projectName": "PicPay.Api",
-        "projectPath": "F:\\dev\\PicPay\\src\\PicPay.Api\\PicPay.Api.csproj",
+        "projectPath": "F:\\dev\\Picpay\\src\\PicPay.Api\\PicPay.Api.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "F:\\dev\\PicPay\\src\\PicPay.Api\\obj\\",
+        "outputPath": "F:\\dev\\Picpay\\src\\PicPay.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\dev\\PicPay\\src\\PicPay.CrossCutting\\PicPay.CrossCutting.csproj": {
-                "projectPath": "F:\\dev\\PicPay\\src\\PicPay.CrossCutting\\PicPay.CrossCutting.csproj"
+              "F:\\dev\\Picpay\\src\\PicPay.CrossCutting\\PicPay.CrossCutting.csproj": {
+                "projectPath": "F:\\dev\\Picpay\\src\\PicPay.CrossCutting\\PicPay.CrossCutting.csproj"
               }
             }
           }
@@ -91,14 +91,14 @@
         }
       }
     },
-    "F:\\dev\\PicPay\\src\\PicPay.Application\\PicPay.Application.csproj": {
+    "F:\\dev\\Picpay\\src\\PicPay.Application\\PicPay.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\dev\\PicPay\\src\\PicPay.Application\\PicPay.Application.csproj",
+        "projectUniqueName": "F:\\dev\\Picpay\\src\\PicPay.Application\\PicPay.Application.csproj",
         "projectName": "PicPay.Application",
-        "projectPath": "F:\\dev\\PicPay\\src\\PicPay.Application\\PicPay.Application.csproj",
+        "projectPath": "F:\\dev\\Picpay\\src\\PicPay.Application\\PicPay.Application.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "F:\\dev\\PicPay\\src\\PicPay.Application\\obj\\",
+        "outputPath": "F:\\dev\\Picpay\\src\\PicPay.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -119,8 +119,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\dev\\PicPay\\src\\PicPay.Domain\\PicPay.Domain.csproj": {
-                "projectPath": "F:\\dev\\PicPay\\src\\PicPay.Domain\\PicPay.Domain.csproj"
+              "F:\\dev\\Picpay\\src\\PicPay.Domain\\PicPay.Domain.csproj": {
+                "projectPath": "F:\\dev\\Picpay\\src\\PicPay.Domain\\PicPay.Domain.csproj"
               }
             }
           }
@@ -165,14 +165,14 @@
         }
       }
     },
-    "F:\\dev\\PicPay\\src\\PicPay.CrossCutting\\PicPay.CrossCutting.csproj": {
+    "F:\\dev\\Picpay\\src\\PicPay.CrossCutting\\PicPay.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\dev\\PicPay\\src\\PicPay.CrossCutting\\PicPay.CrossCutting.csproj",
+        "projectUniqueName": "F:\\dev\\Picpay\\src\\PicPay.CrossCutting\\PicPay.CrossCutting.csproj",
         "projectName": "PicPay.CrossCutting",
-        "projectPath": "F:\\dev\\PicPay\\src\\PicPay.CrossCutting\\PicPay.CrossCutting.csproj",
+        "projectPath": "F:\\dev\\Picpay\\src\\PicPay.CrossCutting\\PicPay.CrossCutting.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "F:\\dev\\PicPay\\src\\PicPay.CrossCutting\\obj\\",
+        "outputPath": "F:\\dev\\Picpay\\src\\PicPay.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -193,14 +193,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\dev\\PicPay\\src\\PicPay.Application\\PicPay.Application.csproj": {
-                "projectPath": "F:\\dev\\PicPay\\src\\PicPay.Application\\PicPay.Application.csproj"
+              "F:\\dev\\Picpay\\src\\PicPay.Application\\PicPay.Application.csproj": {
+                "projectPath": "F:\\dev\\Picpay\\src\\PicPay.Application\\PicPay.Application.csproj"
               },
-              "F:\\dev\\PicPay\\src\\PicPay.Domain\\PicPay.Domain.csproj": {
-                "projectPath": "F:\\dev\\PicPay\\src\\PicPay.Domain\\PicPay.Domain.csproj"
+              "F:\\dev\\Picpay\\src\\PicPay.Domain\\PicPay.Domain.csproj": {
+                "projectPath": "F:\\dev\\Picpay\\src\\PicPay.Domain\\PicPay.Domain.csproj"
               },
-              "F:\\dev\\PicPay\\src\\PicPay.Infraestrutura\\PicPay.Infraestrutura.csproj": {
-                "projectPath": "F:\\dev\\PicPay\\src\\PicPay.Infraestrutura\\PicPay.Infraestrutura.csproj"
+              "F:\\dev\\Picpay\\src\\PicPay.Infraestrutura\\PicPay.Infraestrutura.csproj": {
+                "projectPath": "F:\\dev\\Picpay\\src\\PicPay.Infraestrutura\\PicPay.Infraestrutura.csproj"
               }
             }
           }
@@ -249,14 +249,14 @@
         }
       }
     },
-    "F:\\dev\\PicPay\\src\\PicPay.Domain\\PicPay.Domain.csproj": {
+    "F:\\dev\\Picpay\\src\\PicPay.Domain\\PicPay.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\dev\\PicPay\\src\\PicPay.Domain\\PicPay.Domain.csproj",
+        "projectUniqueName": "F:\\dev\\Picpay\\src\\PicPay.Domain\\PicPay.Domain.csproj",
         "projectName": "PicPay.Domain",
-        "projectPath": "F:\\dev\\PicPay\\src\\PicPay.Domain\\PicPay.Domain.csproj",
+        "projectPath": "F:\\dev\\Picpay\\src\\PicPay.Domain\\PicPay.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "F:\\dev\\PicPay\\src\\PicPay.Domain\\obj\\",
+        "outputPath": "F:\\dev\\Picpay\\src\\PicPay.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -313,14 +313,14 @@
         }
       }
     },
-    "F:\\dev\\PicPay\\src\\PicPay.Infraestrutura\\PicPay.Infraestrutura.csproj": {
+    "F:\\dev\\Picpay\\src\\PicPay.Infraestrutura\\PicPay.Infraestrutura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\dev\\PicPay\\src\\PicPay.Infraestrutura\\PicPay.Infraestrutura.csproj",
+        "projectUniqueName": "F:\\dev\\Picpay\\src\\PicPay.Infraestrutura\\PicPay.Infraestrutura.csproj",
         "projectName": "PicPay.Infraestrutura",
-        "projectPath": "F:\\dev\\PicPay\\src\\PicPay.Infraestrutura\\PicPay.Infraestrutura.csproj",
+        "projectPath": "F:\\dev\\Picpay\\src\\PicPay.Infraestrutura\\PicPay.Infraestrutura.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "F:\\dev\\PicPay\\src\\PicPay.Infraestrutura\\obj\\",
+        "outputPath": "F:\\dev\\Picpay\\src\\PicPay.Infraestrutura\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -341,8 +341,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\dev\\PicPay\\src\\PicPay.Domain\\PicPay.Domain.csproj": {
-                "projectPath": "F:\\dev\\PicPay\\src\\PicPay.Domain\\PicPay.Domain.csproj"
+              "F:\\dev\\Picpay\\src\\PicPay.Domain\\PicPay.Domain.csproj": {
+                "projectPath": "F:\\dev\\Picpay\\src\\PicPay.Domain\\PicPay.Domain.csproj"
               }
             }
           }

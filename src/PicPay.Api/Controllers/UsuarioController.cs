@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using PicPay.Application.DTO;
 using PicPay.Application.Interfaces;
 using PicPay.Domain.Models;
@@ -16,6 +17,7 @@ public class UsuarioController : ControllerBase
         _services = services;
     }
     [HttpGet]
+   
     public async Task<ActionResult<IEnumerable<UsuarioDTO>>> GetAll()
     {
         var usuarios = await _services.ObterTodos();

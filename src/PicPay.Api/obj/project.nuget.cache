@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "364TRGB+6eYHNoGKp0PrMVvwl8jdQAJANohBBo8UZMQf2GXQSjhxs48yBDaXAubcLBqO91xSBvXi1izx9o7Oig==",
+  "dgSpecHash": "mlbQTQMadBlxDbTSUGk5WpWymNrHQMbwcGZG/jEucDE1Rg91ivp72k9QbrH8KFWkfeZPbjaxiAT7wsA3aY4yzw==",
   "success": true,
-  "projectFilePath": "F:\\dev\\PicPay\\src\\PicPay.Api\\PicPay.Api.csproj",
+  "projectFilePath": "F:\\dev\\Picpay\\src\\PicPay.Api\\PicPay.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
