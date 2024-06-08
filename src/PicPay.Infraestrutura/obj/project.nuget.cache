@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n+wQTRUtJugJrdW2Ts4MCz9oUizas807JMQNUXwbGtlKQGsWGekT64RszkFzK+fMqqG8ycmSiy1ZXN89wOla0g==",
+  "dgSpecHash": "m7dFrABlEZtNmjC/MYLhIr62ZEdjyN9WpAlPuYJO+fGuM4LhPyn7bzB9f2DnVPPnkJyGSlGprX6DO2C6VkOFiw==",
   "success": true,
-  "projectFilePath": "F:\\dev\\Picpay\\src\\PicPay.Infraestrutura\\PicPay.Infraestrutura.csproj",
+  "projectFilePath": "F:\\dev\\PicPay\\src\\PicPay.Infraestrutura\\PicPay.Infraestrutura.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

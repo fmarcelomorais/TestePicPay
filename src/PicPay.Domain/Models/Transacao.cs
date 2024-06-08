@@ -28,6 +28,8 @@ namespace PicPay.Domain.Models
             
             if (UsuarioEnvia.TipoUsuario == 2) throw new Exception(message: "Logistas não podem realizar transferências.");
 
+
+
             if (UsuarioEnvia.Conta.VerificarPossibilidadeDeTransferencia(ValorTransacao))
             {
                 UsuarioEnvia.Conta.EnviarValor(UsuarioEnvia.Conta, ValorTransacao);

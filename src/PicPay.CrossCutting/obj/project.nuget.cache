@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wsaBI341UNTOlwidYGRtmgiTTPerQqLio4mtiLUFyjFXWGlvw+Ss0fN0Cm/oEaPIomi/o5HlWsHCGgc6iu8YWA==",
+  "dgSpecHash": "SL1TVlHzHqxdq1VF2F1Xx4Tr/giWh/gROVdv+UkckOv58MQcENJi9t3vNAoi3oDrwa5m/m9P4sHRFzYXgIzlGQ==",
   "success": true,
-  "projectFilePath": "F:\\dev\\Picpay\\src\\PicPay.CrossCutting\\PicPay.CrossCutting.csproj",
+  "projectFilePath": "F:\\dev\\PicPay\\src\\PicPay.CrossCutting\\PicPay.CrossCutting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
